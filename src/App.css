@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+   display: flex;
+   align-items: baseline;
+   /* -ms-flex-align: end; */
+   justify-content:space-between;
+    border: 2px solid red;
+    top:0;
+    left: 0;
+    width: 99.7%;
+    /* position: fixed; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main_note{
+    /* border: 2px solid black; */
+    width: 50%;
+    margin: auto;
+    height: auto;
+    margin-top: 1em;
+
+
+}
+.note-form{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    
+    box-shadow: 0 0 5px rgb(223, 214, 214);
+
+}
+.note-form input{
+    height: 2em;
+    border: none;
+    width: 100%;
+    margin: 1em 0;
+    outline: none;
+}
+.note-form textarea{
+    border: none;
+    outline: none;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-div{
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+        /* width: 10%; */
+    /* margin: auto; */
+    /* right: 0%; */
+    /* left: 0; */
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.note{
+    /* border: 2px solid red; */
+    min-width: 30%;
+    border-radius: 10px;
+    /* min-width: 10%; */
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(198, 194, 194);
+    margin: 1em 0;
+    /* display: inline; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content{
+    /* border: 2px solid black; */
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    /* border: 2px solid red; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(200, 199, 197);
+    width: 100%;
 }
